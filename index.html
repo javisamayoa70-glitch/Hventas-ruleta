@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Ruleta sorpresa oficial de HVENTAS. Gira y descubre si ganas un cupón sorpresa.">
+  <title>Ruleta Sorpresa | HVENTAS</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="HVENTAS inicio">
+      <span class="brand-mark">H</span>
+      <span>HVENTAS<small>EXPERIENCIA DE CLIENTE</small></span>
+    </a>
+    <span class="status"><i></i> PROMOCIÓN ESPECIAL</span>
+  </header>
+
+  <main id="inicio">
+    <section class="intro">
+      <div class="eyebrow">CAMPAÑA EXCLUSIVA · FREE FIRE</div>
+      <h1>Ruleta <span>Sorpresa</span></h1>
+      <p>Participa, gira y descubre tu resultado. Hay tres cupones sorpresa disponibles; las demás casillas son de broma.</p>
+    </section>
+
+    <section class="panel" aria-label="Ruleta HVENTAS">
+      <div class="panel-heading">
+        <div><span class="section-kicker">01 / PARTICIPACIÓN</span><h2>Registra tus datos</h2></div>
+        <span class="secure-label">PARTICIPACIÓN GRATUITA</span>
+      </div>
+      <form id="player-form" class="player-form">
+        <label>Nombre de TikTok<input id="player-name" name="name" maxlength="60" placeholder="Escribe tu usuario o nombre de TikTok" autocomplete="nickname" required></label>
+        <label>ID de Free Fire<input id="player-id" name="playerId" inputmode="numeric" maxlength="24" placeholder="Ej. 123456789" required></label>
+        <p class="form-note">Usaremos tu nombre de TikTok y tu ID de Free Fire para verificar tu participación y el premio.</p>
+      </form>
+
+      <div class="wheel-area">
+        <div class="pointer" aria-hidden="true"></div>
+        <div class="wheel-shell"><canvas id="wheel" width="600" height="600" aria-label="Ruleta con tres cupones sorpresa y casillas de comida para gatos"></canvas></div>
+        <div class="wheel-caption"><span class="legend coupon"></span> 3 CUPONES SORPRESA <span class="legend cat"></span> COMIDA PARA GATOS</div>
+      </div>
+      <button id="spin-button" class="spin-button" type="submit" form="player-form">GIRAR RULETA <span>→</span></button>
+      <p id="status-message" class="status-message" role="status" aria-live="polite">Completa tus datos para habilitar tu participación.</p>
+    </section>
+
+    <section id="result" class="result-card" hidden aria-live="polite">
+      <div class="result-symbol" id="result-symbol">★</div>
+      <div class="result-kicker" id="result-kicker">RESULTADO DE PARTICIPACIÓN</div>
+      <h2 id="result-title">¡Felicidades!</h2>
+      <p id="result-copy"></p>
+      <div id="coupon-warning" class="warning" hidden>Este cupón solo se puede utilizar una vez. Para volver a utilizar un cupón, tendrás que esperar hasta que HVENTAS anuncie un nuevo lanzamiento de descuentos en sus redes sociales o WhatsApp.</div>
+      <a id="whatsapp-button" class="whatsapp-button" href="#" target="_blank" rel="noopener" hidden>MANDAR RESULTADOS POR WHATSAPP <span>↗</span></a>
+      <p id="whatsapp-help" class="whatsapp-help" hidden>Se abrirá WhatsApp con tu nombre, ID y resultado. Pulsa «Enviar» para mandarlo a HVENTAS.</p>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card"><span class="info-number">02</span><h3>Premios sorpresa</h3><p>La ruleta muestra tres casillas de cupón sorpresa. No se publican precios ni cantidades de descuento.</p></article>
+      <article class="info-card"><span class="info-number">03</span><h3>Un solo uso</h3><p>Cada cupón es válido para una sola recarga y según el paquete de diamantes que el ganador elija.</p></article>
+      <article class="info-card"><span class="info-number">04</span><h3>Resultados claros</h3><p>Si ganas un cupón, podrás enviar tus datos a HVENTAS por WhatsApp. Si sale comida para gatos, no aparecerá ese botón.</p></article>
+    </section>
+    <p class="disclaimer">Promoción administrada por HVENTAS. La ruleta dispone de un máximo de tres cupones ganadores en total. Una vez entregados, no se emitirán más hasta un nuevo lanzamiento anunciado por HVENTAS.</p>
+  </main>
+  <footer><span>HVENTAS</span><span>ATENCIÓN · CONFIANZA · EXPERIENCIA</span></footer>
+</body>
+</html>

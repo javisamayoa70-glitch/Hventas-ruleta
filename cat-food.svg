@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="180" viewBox="0 0 220 180">
+ <defs>
+  <linearGradient id="box" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#55b8ff"/><stop offset="1" stop-color="#12508f"/></linearGradient>
+  <linearGradient id="bag" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffdf83"/><stop offset="1" stop-color="#c88727"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#071629" flood-opacity=".5"/></filter>
+ </defs>
+ <g filter="url(#sh)">
+  <path d="M40 26 157 12l25 16v119l-116 18-26-17Z" fill="url(#box)" stroke="#b9e2ff" stroke-width="3"/>
+  <path d="m157 12 25 16v119l-25-14Z" fill="#0c3c70"/>
+  <path d="m40 26 117-14v121L40 150Z" fill="url(#box)"/>
+  <path d="m61 39 76-9v13l-76 9Z" fill="#f3c35e"/>
+  <text x="99" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="900" fill="#17304a">MASCOTAS</text>
+  <path d="M82 61 69 48l-2 28m48-15 13-13 2 28" fill="#f5d5a0" stroke="#633f2c" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="95" cy="81" rx="34" ry="29" fill="#f4d39b" stroke="#633f2c" stroke-width="3"/>
+  <path d="M81 78q5-7 10 0m10 0q5-7 10 0" fill="none" stroke="#392a24" stroke-width="3" stroke-linecap="round"/>
+  <path d="m92 88 5 4 5-4" fill="#d87872" stroke="#633f2c" stroke-width="2"/>
+  <path d="M96 92v5m0 0q-9 7-15 0m15 0q9 7 15 0" fill="none" stroke="#633f2c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M65 119q30-17 60 0l-5 23H70Z" fill="url(#bag)" stroke="#8e5b1c" stroke-width="2"/>
+  <text x="95" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="900" fill="#57350f">CAT FOOD</text>
+  <circle cx="146" cy="82" r="9" fill="#f6d37c"/><circle cx="136" cy="69" r="6" fill="#f6d37c"/><circle cx="156" cy="69" r="6" fill="#f6d37c"/><circle cx="132" cy="87" r="6" fill="#f6d37c"/><circle cx="160" cy="87" r="6" fill="#f6d37c"/>
+ </g>
+</svg>

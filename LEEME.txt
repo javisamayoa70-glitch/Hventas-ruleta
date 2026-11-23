@@ -1,0 +1,31 @@
+HVENTAS — RULETA SORPRESA PARA NETLIFY
+
+CAMBIOS INCLUIDOS
+- Campo de participante: Nombre de TikTok (no nombre personal).
+- Campo de ID de Free Fire para verificar la participación.
+- Ruleta ilustrada con tres cupones dorados con el texto CUPÓN SORPRESA y casillas de cajas de comida para gatos con estética gaming.
+- La posición de los cupones disponibles se mezcla en cada giro.
+- Solo existen tres cupones ganadores en total; cada cupón se registra una sola vez en el almacenamiento de Netlify.
+- Si gana, aparece el mensaje de cupón sorpresa, la advertencia de un solo uso y el botón que abre WhatsApp con su nombre de TikTok e ID preparados.
+- Si sale comida para gatos, no aparece el botón de WhatsApp.
+- WhatsApp Business configurado: 50232707055.
+
+ARCHIVOS
+- index.html / styles.css / app.js: página independiente y diseño adaptable a celular.
+- assets/coupon.svg: ilustración del cupón dorado.
+- assets/cat-food.svg: ilustración de caja de comida para gatos estilo gaming.
+- assets/config.js: número de WhatsApp de HVENTAS.
+- netlify/functions/spin.mjs: sorteo y registro de los tres cupones en servidor.
+- netlify.toml y package.json: configuración para Netlify.
+
+PUBLICACIÓN
+1. Descomprime el ZIP.
+2. Sube el proyecto a un repositorio Git o conéctalo a Netlify para que instale la dependencia @netlify/blobs y despliegue la función.
+3. En Netlify, confirma que la función spin esté publicada y que Netlify Blobs esté disponible.
+4. Prueba la ruleta desde la URL pública antes de anunciarla.
+
+IMPORTANTE
+- El descuento no se muestra en la ruleta; HVENTAS lo define al atender al ganador según el paquete y el precio vigente.
+- El botón abre un chat con el texto preparado. El cliente debe pulsar ENVIAR en WhatsApp; no se envía solo.
+- El límite de tres cupones se controla en el servidor y se mantiene entre publicaciones mientras no se borre el almacenamiento.
+- Para iniciar una nueva campaña de tres cupones, hay que reiniciar de forma controlada las entradas coupon-1, coupon-2 y coupon-3 en Netlify Blobs.
